@@ -5,15 +5,15 @@ function findInteger () {
   let number = document.getElementById('userinput').value
   number = parseInt(number)
 
-  let type = "an integer."
+  let type = 'an integer.'
 
   if (number < 0) {
-    type = "negative."
+    type = 'negative.'
   } else if (number > 0) {
-    type = "positive."
+    type = 'positive.'
   } else {
-    type = "either not a proper number or has a value of 0."
+    type = 'either not a proper number or has a value of 0.'
   }
 
-  document.getElementById('answertext').innerHTML="The number " + Math.floor(number) + " is " + type
+  document.getElementById('answertext').innerHTML = 'The number ' + Math.floor(number) + ' is ' + type
 }
